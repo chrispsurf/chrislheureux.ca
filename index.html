@@ -1,55 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Christopher L'Heureux | Enterprise Project Execution Leader</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background: #f8f9fa;
-            color: #222;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.7;
         }
-        .container {
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            padding: 20px 40px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #0b3d91;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: auto;
+            gap: 60px;
+        }
+
+        .hero img {
+            width: 260px;
+            border-radius: 12px;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            margin: 0 0 10px 0;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #0b3d91;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background: #072d6b;
+        }
+
+        section {
+            padding: 70px 20px;
             max-width: 900px;
             margin: auto;
-            padding: 40px 20px;
         }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 5px;
-        }
+
         h2 {
-            margin-top: 40px;
-            color: #444;
+            font-size: 28px;
+            margin-bottom: 25px;
         }
-        .tagline {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
+
         ul {
             padding-left: 20px;
         }
-        .footer {
-            margin-top: 60px;
-            font-size: 14px;
-            color: #777;
+
+        .alt-section {
+            background: #f5f7fa;
         }
-        a {
-            color: #0073e6;
-            text-decoration: none;
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img {
+                width: 200px;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Christopher L'Heureux</h1>
+
+<nav>
+    <div><strong>Christopher L'Heureux</strong></div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <img src="profile.jpg" alt="Christopher L'Heureux">
+    <div class="hero-text">
+        <h1>Enterprise Project Execution Leader</h1>
+        <p>Governance • Risk Management • Operational Continuity • Strategic Delivery</p>
+        <a href="Chris_LHeureux_Resume.pdf" class="btn">Download Resume</a>
+    </div>
+</div>
+
+<section id="about">
+    <h2>About</h2>
+    <p>
+        Calgary-based executive leader with 25+ years of experience overseeing complex
+        business and technology initiatives from planning and design through operational
+        handover. I specialize in strengthening governance, stabilizing at-risk programs,
+        and aligning delivery execution with strategic objectives.
+    </p>
+</section>
+
+<section id="expertise" class="alt-section">
+    <h2>Core Expertise</h2>
+    <ul>
+        <li>Professional Services Leadership</li>
+        <li>Enterprise SaaS Implementations</li>
+        <li>Identity & Access Management (IAM)</li>
+        <li>Executive Stakeholder Engagement</li>
+        <li>Program & Project Governance</li>
+        <li>Escalation & Risk Management</li>
+    </ul>
+</section>
+
+<section id="leadership">
+    <h2>Leadership Approach</h2>
+    <p><strong>Stabilizing Complex Environments</strong></p>
+    <p>I bring clarity to ambiguity through structured governance, ownership alignment, and risk transparency.</p>
+
+    <p><strong>Governance as an Enabler</strong></p>
+    <p>Strong governance frameworks improve forecasting accuracy, resource allocation, and executive confidence.</p>
+
+    <p><strong>Operational Continuity</strong></p>
+    <p>I ensure delivery environments align with organizational priorities while minimizing disruption and protecting long-term value.</p>
+</section>
+
+<section id="experience" class="alt-section">
+    <h2>Selected Experience</h2>
+    <p><strong>Bravura Security</strong> – Senior Leadership Roles</p>
+    <ul>
+        <li>Led 32-member delivery organization managing 60+ concurrent engagements valued at $3M+ annually.</li>
+        <li>Improved forecasting and resource utilization by 20% through governance controls.</li>
+        <li>Stabilized escalated enterprise programs and restored executive confidence.</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Connect</h2>
+    <p>
+        Calgary, Alberta<br>
+        <a href="mailto:christopher.lheureux@gmail.com">Email</a><br>
+        <a href="https://www.linkedin.com/in/chrislheureux" target="_blank">LinkedIn</a>
+    </p>
+</section>
+
+<footer>
+    © 2026 Christopher L'Heureux
+</footer>
 
 </body>
 </html>
