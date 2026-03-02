@@ -105,6 +105,13 @@
             background: #f5f7fa;
         }
 
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 40px;
+            list-style-position: inside;
+        }
+
         footer {
             text-align: center;
             padding: 40px 20px;
@@ -120,6 +127,10 @@
 
             .hero img {
                 width: 200px;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -181,7 +192,7 @@
 <section id="expertise" class="alt-section">
     <h2>Accountable for Delivery</h2>
     <p>I've led:</p>
-    <ul>
+    <ul class="two-colum">
         <li>Large-scale IAM implementations</li>
         <li>On-premise to SaaS migrations</li>
         <li>Enterprise identity transformations</li>
